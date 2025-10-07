@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", "Noto Sans Thai";
-    /* scrollbar-gutter: stable; */
+    scrollbar-gutter: stable;
 }
 
 :root {
