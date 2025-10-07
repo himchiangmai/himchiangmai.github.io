@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <title>ฮิมสารภี | Church Management</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div>
+                        <!-- <i class="fas fa-church"></i> -->
+                        <img class="logo-img" src="/assets/img/logo.png" />
+                    </div>
+                    <div class="logo-text">
+                        <h1>ฮิมสารภี</h1>
+                        <p>Church Management</p>
+                    </div>
+                </div>
+                <a href="/" class="card-link">
+                    <button class="back-toggle">
+                        <i class="fas fa-home"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navigation (Desktop) -->
+    <nav class="nav-menu" style="display: none;">
+        <div class="container">
+            <div class="nav-menu-tabs">
+                <button class="nav-menu-tab nav-menu-outline active" data-tab="summary">ภาพรวม</button>
+                <button class="nav-menu-tab" data-tab="menu1">เพิ่มพูน</button>
+                <button class="nav-menu-tab" data-tab="menu2">ติดตามผล</button>
+                <button class="nav-menu-tab" data-tab="menu3">อภิบาล</button>
+                <button class="nav-menu-tab" data-tab="menu4">พัฒนา</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Summary -->
+            <section id="summary" class="section active">
+                <h2 class="section-title">ภาพรวม</h2>
+                <div>
+                    No data
+                </div>
+            </section>
+
+            <!-- Menu 1 -->
+            <section id="menu1" class="section">
+                <h2 class="section-title">ฝ่ายเพิ่มพูน</h2>
+                <div>
+                    <a href="/church/HIMSRP/Evangelism" class="btn btn-primary card-link">
+                        <i class="fas fa-plus"></i>
+                        กรอกข้อมูล
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1kZgswol06kHCNSxuJQnXsbAHzTFfeYgKlCChUvR_CCw" target="_blank" class="btn btn-primary card-link">
+                        <i class="fas fa-table"></i>
+                        ดูข้อมูล
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Menu 2 -->
+            <section id="menu2" class="section">
+                <h2 class="section-title">ฝ่ายติดตามผล</h2>
+                <div>
+                    No data
+                </div>
+            </section>
+
+
+
+            <!-- Menu 3 -->
+            <section id="menu3" class="section">
+                <h2 class="section-title">ฝ่ายอภิบาล</h2>
+                <div>
+                    No data
+                </div>
+            </section>
+
+
+
+            <!-- Menu 4 -->
+            <section id="menu4" class="section">
+                <h2 class="section-title">ฝ่ายพัฒนา</h2>
+                <div>
+                    No data
+                </div>
+            </section>
+
+   
+        </div>
+    </main>
+
+
+    <script src="/assets/js/utility.js"></script>
+
+</body>
+
+</html>

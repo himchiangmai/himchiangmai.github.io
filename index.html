@@ -1,0 +1,427 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>HIM Chiang Mai Church</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div>
+                        <!-- <i class="fas fa-church"></i> -->
+                        <img class="logo-img" src="assets/img/logo.png" />
+                    </div>
+                    <div class="logo-text">
+                        <h1>HIM Chiang Mai Church</h1>
+                        <p>ประกาศ สร้างสาวก ตั้งคริสตจักร</p>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-header">
+            <div class="menu-logo">
+                <div class="menu-logo-icon">
+                    <i class="fas fa-church"></i>
+                </div>
+                <div class="menu-logo-text">เมนู</div>
+            </div>
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="menu-items">
+            <li class="menu-item" data-tab="about">
+                <i class="fas fa-info-circle"></i>
+                <span>เกี่ยวกับองค์กร</span>
+            </li>
+            <li class="menu-item" data-tab="ministries">
+                <i class="fas fa-flag"></i>
+                <span>พันธกิจ</span>
+            </li>
+            <li class="menu-item active" data-tab="church">
+                <i class="fas fa-church"></i>
+                <span>สถานนมัสการ</span>
+            </li>
+            <li class="menu-item" data-tab="announcements">
+                <i class="fas fa-bell"></i>
+                <span>กิจกรรม</span>
+            </li>
+            <li class="menu-item" data-tab="donate">
+                <i class="fas fa-heart"></i>
+                <span>การถวาย</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navigation (Desktop) -->
+    <nav class="nav" style="display: none;">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab" data-tab="about">เกี่ยวกับ</button>
+                <button class="nav-tab" data-tab="ministries">พันธกิจ</button>
+                <button class="nav-tab active" data-tab="church">สถานนมัสการ</button>
+                <!-- <button class="nav-tab" data-tab="sermons">Sermons</button> -->
+                <button class="nav-tab" data-tab="announcements">กิจกรรม</button>
+                <button class="nav-tab" data-tab="donate">การถวาย</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- About Us Section -->
+            <section id="about" class="section">
+                <h2 class="section-title">เกี่ยวกับองค์กร</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://placehold.co/600x400/4361ee/ffffff?text=Our+Church" alt="Church building">
+                    </div>
+                    <div class="about-text">
+                        
+                        <p>คริสตจักรฮิมเชียงใหม่ สังกัดองค์กรคริสตจักรฮิมไทยแลนด์ สหกิจคริสเตียน Hope International Ministries</p>
+                        <p>ในปี 2025 มีสถานนมัสการจำนวนทั้งหมด 9 แห่ง โดยเริ่มต้น ...</p>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมสันทราย
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมภูพิงค์
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมแม่โจ้
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมลำพูน
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมหางดง
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมสารภี
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมสันป่าตอง
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมดอยสะเก็ด
+                            </div>
+                        </div>
+                        <div class="service-time">
+                            <i class="fas fa-calendar fa-lg"></i>
+                            <div>
+                                <strong>20XX</strong> คริสตจักรฮิมแม่ริม
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ministries Section -->
+            <section id="ministries" class="section">
+                <h2 class="section-title">พันธกิจหลัก</h2>
+                <div class="ministries-grid">
+                    <div class="ministry-card">
+                        <div class="ministry-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="ministry-title">ประกาศ (Evangelism)</h3>
+                        <p class="ministry-description">ให้คนทุกคนได้ยินและรู้จักพระเยซูคริสต์</p>
+                    </div>
+                    <div class="ministry-card">
+                        <div class="ministry-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="ministry-title">สร้างสาวก (Discipleship)</h3>
+                        <p class="ministry-description">ให้ผู้เชื่อเติบโตในความเชื่อและมีชีวิตที่เหมือนพระคริสต์</p>
+                    </div>
+                    <div class="ministry-card">
+                        <div class="ministry-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <h3 class="ministry-title">ตั้งคริสตจักร (Church Planting)</h3>
+                        <p class="ministry-description">สร้างคริสตจักรท้องถิ่นที่เข้มแข็งและขยายออกไปอย่างต่อเนื่อง</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Church Section -->
+            <section id="church" class="section active">
+                <h2 class="section-title">สถานนมัสการ</h2>
+                <div class="ministries-grid">
+                    <a href="church/HIMSS" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมสันทราย</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMPP" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมภูพิงค์</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMMJ" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมแม่โจ้</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMLP" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมลำพูน</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMHD" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมหางดง</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMSRP" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมสารภี</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMSPT" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมสันป่าตอง</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMDSK" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมดอยสะเก็ด</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+                    <a href="church/HIMMR" class="card-link">
+                        <div class="ministry-card">
+                            <div class="ministry-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3 class="ministry-title">ฮิมแม่ริม</h3>
+                            <p class="ministry-description"></p>
+                        </div>
+                    </a>
+
+
+                </div>
+            </section>
+
+
+
+            <!-- Sermons Section -->
+            <section id="sermons" class="section">
+                <h2 class="section-title">Latest Sermon</h2>
+                <div class="sermon-card">
+                    <div class="sermon-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>November 17, 2024</span>
+                    </div>
+                    <h3 class="sermon-title">Walking in Faith: Trusting God's Plan</h3>
+                    <p class="sermon-speaker">by Pastor Michael Johnson</p>
+                    <p class="sermon-description">Discover how to trust in God's perfect timing and walk confidently in
+                        the path He has laid out for your life.</p>
+                    <div class="sermon-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download Audio
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-video"></i>
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- Announcements Section -->
+            <section id="announcements" class="section">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="announcements-list">
+                    <div class="announcement-item">
+                        <div class="announcement-date">
+                            <div class="date-day">24</div>
+                            <div class="date-month">Nov</div>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>HUT</h3>
+                            <p>Special worship service celebrating God's blessings</p>
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-date">
+                            <div class="date-day">15</div>
+                            <div class="date-month">Dec</div>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Christmas Concert</h3>
+                            <p>Annual community Christmas celebration with choir and orchestra</p>
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-date">
+                            <div class="date-day">22</div>
+                            <div class="date-month">Dec</div>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Christmas Eve Service</h3>
+                            <p>Traditional candlelight service at 7 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donate Section -->
+            <section id="donate" class="section">
+                <h2 class="section-title">การถวาย</h2>
+                <div>
+                    <a target="_blank" href="https://line.me/R/ti/p/@504ucrlv?fbclid=IwY2xjawNRtVNleHRuA2FlbQIxMQABHuvyNwMHLQf2hZglFpJXCET3xWGfijPCiTIIpJCltooXH0pIVGIEo5rrgDh2_aem_NL5d9hnOFfaZOsdfVuXHdQ" class="btn btn-primary card-link">
+                        <i class="fas fa-heart"></i>
+                        ช่องทางการถวาย
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <div class="footer-logo-text">HIM Chiang Mai Church</div>
+                    </div>
+                    <p class="footer-about">คริสตจักรฮิมเชียงใหม่ สังกัดองค์กรคริสตจักรฮิมไทยแลนด์ สหกิจคริสเตียน Hope International Ministries</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">สถานนมัสการ</h3>
+                    <ul class="footer-list">
+                        <li><a href="/church/HIMSS/">ฮิมสันทราย</a></li>
+                        <li><a href="/church/HIMPP/">ฮิมภูพิงค์</a></li>
+                        <li><a href="/church/HIMMJ/">ฮิมแม่โจ้</a></li>
+                        <li><a href="/church/HIMLP/">ฮิมลำพูน</a></li>
+                        <li><a href="/church/HIMHD/">ฮิมหางดง</a></li>
+                        <li><a href="/church/HIMSRP/">ฮิมสารภี</a></li>
+                        <li><a href="/church/HIMSPT/">ฮิมสันป่าตอง</a></li>
+                        <li><a href="/church/HIMDSK/">ฮิมดอยสะเก็ด</a></li>
+                        <li><a href="/church/HIMMR/">ฮิมแม่ริม</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <div class="footer-contact">
+                        <i class="fas fa-map-marker-alt footer-icon"></i>
+                        <span>231 หมู่ 6 ตำบลสันพระเนตร อำเภอสันทราย จังหวัดเชียงใหม่ 50210</span>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone footer-icon"></i>
+                        <span>093-137-7413</span>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-envelope footer-icon"></i>
+                        <span>jkhcm@hotmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 HIM Chiang Mai Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

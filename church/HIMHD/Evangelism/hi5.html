@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content='https://himchiangmai.github.io' property='og:url'/>
+    <meta content='ฝ่ายเพิ่มพูน (คริสตจักรฮิมหางดง)' property='og:title'/>
+    <meta content='ระบบเก็บข้อมูลฝ่ายเพิ่มพูน (คริสตจักรฮิมหางดง)' property='og:description'/>
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <title>ระบบเก็บข้อมูลฝ่ายเพิ่มพูน (คริสตจักรฮิมหางดง)</title>
+</head>
+
+<body class="text-center">
+    <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
+    <main class="form-signin">
+        
+        <form id="updateForm" method="POST" class="needs-validation" novalidate 
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYTR9SYQBFjh2CrRTDA3bYcQL3vhgo553GqIJpbkXF4YN3eQ/formResponse" target="hiddenFrame">
+            
+            <a href="/church/HIMHD" class="back-toggle back-position">
+                <i class="bi bi-house-fill"></i>
+            </a>
+            <div class="pb-2">
+                <img src="/assets/img/logo.png" alt="" class="text-center" width="50" height="50">
+            </div>
+            <h1 class="h3 m-0 fw-bold">ฝ่ายเพิ่มพูน</h1>
+            <p class="subTitle m-0">คริสตจักรฮิมหางดง</p>
+
+            <div class="btn-zone">
+                <a href="/church/HIMHD/Evangelism/index.html" class="btn btn-outline-primary btn-sm w-100">การประกาศ</a>
+                <a href="/church/HIMHD/Evangelism/invite.html" class="btn btn-outline-primary btn-sm w-100">คริสตจักร / LG</a>
+                <a href="/church/HIMHD/Evangelism/hi5.html" class="btn btn-primary btn-sm w-100">Hi5</a>
+            </div>
+            <hr />
+            <h2 class="h5 m-0 fw-bold">ข้อมูล Hi5</h2>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12 pb-2 pt-2 flex-split">
+                    <div class="form-flex flex-1">
+                        <label for="Date" class="form-label header">วันที่</label>
+                        <input id="Date" class="form-control w-140px" type="date" required placeholder="Date" onclick="this.showPicker()"
+                            name="entry.1869171375"/>
+                    </div>
+                    <div class="form-flex flex-2">
+                        <label for="Name" class="form-label header">ชื่อสายสัมพันธ์</label>
+                        <input id="Name" type="text" class="form-control w-150px" placeholder="ระบุชื่อสายสัมพันธ์" required
+                            name="entry.1752896660" />
+                    </div>
+                </div>
+
+                <div class="col-sm-12 pb-2 pt-2">
+                    <label for="follower" class="form-label header">ผู้ติดตาม / ผู้รับผิดชอบ / พี่เลี้ยง (ชื่อจริง)</label>
+                    <input id="follower" type="text" class="form-control" placeholder="ระบุชื่อจริง" required
+                        name="entry.724487030" />
+                </div>
+
+                <div class="col-sm-12 pb-2 pt-2">
+                    <label for="LG" class="form-label header">ชื่อ LG</label>
+                    <input id="LG" type="text" class="form-control" placeholder="ระบุ LG" required
+                        name="entry.2001310206" />
+                </div>
+
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <label class="header">การอธิษฐานเผื่อสายสัมพันธ์</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.682401412" value="อธิษฐานเผื่อส่วนตัว และภาพรวม" id="pray1">
+                        <label class="form-check-label" for="pray1">อธิษฐานเผื่อส่วนตัว และภาพรวม</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.682401412" value="อดอาหารอธิษฐาน" id="pray2">
+                        <label class="form-check-label" for="pray2">อดอาหารอธิษฐาน</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <label class="header">การสร้างสัมพันธ์</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1719177751" value="โทรศัพท์" id="relation1">
+                        <label class="form-check-label" for="relation1">โทรศัพท์</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1719177751" value="ส่งข้อความ (Messenger / Line ฯลฯ)" id="relation2">
+                        <label class="form-check-label" for="relation2">ส่งข้อความ (Messenger / Line ฯลฯ)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1719177751" value="เยี่ยมเยียน" id="relation3">
+                        <label class="form-check-label" for="relation3">เยี่ยมเยียน</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1719177751" value="ใช้เวลา / ทำกิจกรรมร่วมกัน" id="relation4">
+                        <label class="form-check-label" for="relation4">ใช้เวลา / ทำกิจกรรมร่วมกัน</label>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <label class="header">ประกาศข่าวประเสริฐ</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1076599774" value="เล่าคำพยาน" id="evan1">
+                        <label class="form-check-label" for="evan1">เล่าคำพยาน</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1076599774" value="เล่าพระกิตติคุณ" id="evan2">
+                        <label class="form-check-label" for="evan2">เล่าพระกิตติคุณ</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1076599774" value="นำรับเชื่อ" id="evan3">
+                        <label class="form-check-label" for="evan3">นำรับเชื่อ</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <label class="header">การเชิญชวน</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.2080647067" value="เชิญชวนมา LG" id="invite1">
+                        <label class="form-check-label" for="invite1">เชิญชวนมา LG</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.2080647067" value="เชิญชวนมาคริสตจักร" id="invite2">
+                        <label class="form-check-label" for="invite2">เชิญชวนมาคริสตจักร</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <label class="header">การตอบสนอง</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1712864066" value="มา LG" id="resp1">
+                        <label class="form-check-label" for="resp1">มา LG</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="entry.1712864066" value="มาคริสตจักร" id="resp2">
+                        <label class="form-check-label" for="resp2">มาคริสตจักร</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="w-100 mt-3 btn btn-lg btn-primary" onclick="validateForm()">
+                ส่งข้อมูล
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="confirm_submit" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">ยืนยันการบันทึกข้อมูล</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <span class="fs-5">ท่านต้องการบันทึกข้อมูลหรือไม่ ?</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                            <button id="submitBtn" class="btn btn-lg btn-success" type="submit">
+                                ยืนยัน
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </form>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/swal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script>
+
+        function validateForm() {
+
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                if (!form.checkValidity()) {
+                    form.classList.add('was-validated')
+                } else {
+                    form.classList.remove('was-validated')
+                    $('#confirm_submit').modal('show');
+                }
+            })
+            
+
+        }
+
+
+        $(document).ready(function(){
+            $("#submitBtn").on('click', function(){
+                let timerInterval;
+                Swal.fire({
+                    title: "กำลังบันทึกข้อมูล",
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading();
+                        timerInterval = setInterval(() => {
+                        }, 100);
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval);
+                    }
+                }).then((result) => {
+                    Swal.fire({
+                        title: "บันทึกข้อมูลสำเร็จ",
+                        icon: "success",
+                        timer: 1000,
+                        showCancelButton: false,
+                        showConfirmButton: false
+                    }).then(function () {
+                        window.location = "/church/HIMHD/Evangelism/hi5.html";
+                        window.location.href = "/church/HIMHD/Evangelism/hi5.html";
+                    });
+                });
+            });
+        });
+        
+    </script>
+
+
+
+</body>
+
+</html>

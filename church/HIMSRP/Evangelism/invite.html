@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content='https://himchiangmai.github.io' property='og:url'/>
+    <meta content='ฝ่ายเพิ่มพูน (คริสตจักรฮิมสารภี)' property='og:title'/>
+    <meta content='ระบบเก็บข้อมูลฝ่ายเพิ่มพูน (คริสตจักรฮิมสารภี)' property='og:description'/>
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <title>ระบบเก็บข้อมูลฝ่ายเพิ่มพูน (คริสตจักรฮิมสารภี)</title>
+</head>
+
+<body class="text-center">
+    <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
+    <main class="form-signin">
+        
+        <form id="updateForm" method="POST" class="needs-validation" novalidate 
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdfe-f9p9kTPJtfIZluGwDMC4OGWM-JtJpDbNvBheHowfj79w/formResponse" target="hiddenFrame">
+
+            <a href="/church/HIMSRP" class="back-toggle back-position">
+                <i class="bi bi-house-fill"></i>
+            </a>
+            <div class="pb-2">
+                <img src="/assets/img/logo.png" alt="" class="text-center" width="50" height="50">
+            </div>
+            <h1 class="h3 m-0 fw-bold">ฝ่ายเพิ่มพูน</h1>
+            <p class="subTitle m-0">คริสตจักรฮิมสารภี</p>
+
+            <div class="btn-zone">
+                <a href="/church/HIMSRP/Evangelism/index.html" class="btn btn-outline-primary btn-sm w-100">การประกาศ</a>
+                <a href="/church/HIMSRP/Evangelism/invite.html" class="btn btn-primary btn-sm w-100">คริสตจักร / LG</a>
+                <a href="/church/HIMSRP/Evangelism/hi5.html" class="btn btn-outline-primary btn-sm w-100">Hi5</a>
+            </div>
+            <hr />
+            <h2 class="h5 m-0 fw-bold">ข้อมูลมาคริสตจักร / LG</h2>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12 pb-2 pt-2 flex-split">
+                    <div class="form-flex flex-2">
+                        <label for="Name" class="form-label header">ชื่อเล่น <span class="text-gray fs-7"></span></label>
+                        <input id="Name" type="text" class="form-control w-150px" placeholder="ระบุชื่อเล่น" required
+                            name="entry.1955450695" />
+                    </div>
+                </div>
+
+                
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <div>
+                        <label class="header underline">การมา LG</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="แจกใบปลิว" id="LGCheck">
+                        <label class="form-check-label" for="LGCheck">ใช่</label>
+                    </div>
+                    <div id="LG-Zone" style="display:none">
+                        <div class="form-flex flex-1">
+                            <label for="Date" class="form-label header">วันที่</label>
+                            <input id="Date" class="form-control w-150px" type="date" placeholder="Date" onclick="this.showPicker()"
+                                name="entry.1677383447"/>
+                        </div>
+                        <div>
+                            <label class="header header">วิธีการ</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input LGRadio" type="radio" name="entry.1858733654" id="inlineRadio1" value="มาด้วยตนเอง">
+                            <label class="form-check-label" for="inlineRadio1">มาด้วยตนเอง</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input LGRadio" type="radio" name="entry.1858733654" id="inlineRadio2" value="มีผู้พามา">
+                            <label class="form-check-label" for="inlineRadio2">มีผู้พามา</label>
+                        </div>
+                        <div class="col-sm-12 pb-2 pt-2">
+                            <input type="text" class="form-control" placeholder="ระบุผู้พามา LG / ผู้เชิญชวน"
+                                name="entry.1784933" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <div>
+                        <label class="header underline">การมาคริสตจักร</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="แจกใบปลิว" id="ChurchCheck">
+                        <label class="form-check-label" for="ChurchCheck">ใช่</label>
+                    </div>
+                    <div id="Church-Zone" style="display:none">
+                        <div class="form-flex flex-1">
+                            <label for="DateChurch" class="form-label header">วันที่</label>
+                            <input id="DateChurch" class="form-control w-150px" type="date" placeholder="Date" onclick="this.showPicker()"
+                                name="entry.1431863990"/>
+                        </div>
+                        <div>
+                            <label class="header">วิธีการ</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ChurchRadio" type="radio" name="entry.763973876" id="inlineChurch1" value="มาด้วยตนเอง">
+                            <label class="form-check-label" for="inlineChurch1">มาด้วยตนเอง</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ChurchRadio" type="radio" name="entry.763973876" id="inlineChurch2" value="มีผู้พามา">
+                            <label class="form-check-label" for="inlineChurch2">มีผู้พามา</label>
+                        </div>
+                        <div class="col-sm-12 pb-2 pt-2">
+                            <input type="text" class="form-control" placeholder="ระบุผู้พามาคริสตจักร / ผู้เชิญชวน"
+                                name="entry.1244771109" />
+                        </div>
+                    </div>
+                </div>
+
+        
+
+                <div class="col-sm-12 pb-2 pt-2 left">
+                    <div>
+                        <label class="header">สถานะ</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus1" value="ผจ. (มาครั้งแรก)" required>
+                        <label class="form-check-label" for="inlineStatus1">ผจ. (มาครั้งแรก)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus2" value="ผจ.2 (มาหลายครั้ง)" required>
+                        <label class="form-check-label" for="inlineStatus2">ผจ.2 (มาหลายครั้ง)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus3" value="คย. (ผู้เชื่อ / คริสเตียนต่างองค์กร)" required>
+                        <label class="form-check-label" for="inlineStatus3">คย. (ผู้เชื่อ / คริสเตียนต่างองค์กร)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus4" value="พย. (พี่น้องคริสเตียนในองค์กร)" required>
+                        <label class="form-check-label" for="inlineStatus4">พย. (พี่น้องคริสเตียนในองค์กร)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus5" value="คนเก่า" required>
+                        <label class="form-check-label" for="inlineStatus5">คนเก่า</label>
+                    </div>
+                </div>
+
+         
+                <div class="col-sm-12 pb-2 pt-2">
+                    <label for="addition" class="form-label header">คย. / พย. จากคริสตจักรใด <span class="text-gray fs-7">(ถ้ามี)</span></label>
+                    <input id="addition" type="text" class="form-control" placeholder="ตัวอย่าง: ไมตรีจิตร"
+                        name="entry.1132204736" />
+                </div>
+
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="w-100 mt-3 btn btn-lg btn-primary" onclick="validateForm()">
+                ส่งข้อมูล
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="confirm_submit" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">ยืนยันการบันทึกข้อมูล</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <span class="fs-5">ท่านต้องการบันทึกข้อมูลหรือไม่ ?</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                            <button id="submitBtn" class="btn btn-lg btn-success" type="submit">
+                                ยืนยัน
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </form>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/swal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script>
+
+        function validateForm() {
+
+            
+
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                if (!form.checkValidity()) {
+                    form.classList.add('was-validated')
+                } else {
+                    form.classList.remove('was-validated')
+                    $('#confirm_submit').modal('show');
+                }
+            })
+            
+
+        }
+
+
+        $(document).ready(function(){
+            $("#submitBtn").on('click', function(){
+                let timerInterval;
+                Swal.fire({
+                    title: "กำลังบันทึกข้อมูล",
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading();
+                        timerInterval = setInterval(() => {
+                        }, 100);
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval);
+                    }
+                }).then((result) => {
+                    Swal.fire({
+                        title: "บันทึกข้อมูลสำเร็จ",
+                        icon: "success",
+                        timer: 1000,
+                        showCancelButton: false,
+                        showConfirmButton: false
+                    }).then(function () {
+                        window.location = "/church/HIMSRP/Evangelism/invite.html";
+                        window.location.href = "/church/HIMSRP/Evangelism/invite.html";
+                    });
+                });
+            });
+        });
+        
+    </script>
+
+
+
+    <script>
+        $("#LGCheck").change(function(){
+            if ($(this).is(':checked')) {
+                $("#LG-Zone").show();
+                $("#Date").attr('required', true);
+                $('.LGRadio').attr('required', true);
+            } else {
+                $("#LG-Zone").hide();
+                $("#LG-Zone input").val("").prop("checked", false);
+                $("#Date").attr('required', false);
+                $('.LGRadio').removeAttr('required');
+            }
+        });
+
+        $("#ChurchCheck").change(function(){
+            if ($(this).is(':checked')) {
+                $("#Church-Zone").show();
+                $("#DateChurch").attr('required', true);
+                $('.ChurchRadio').attr('required', true);
+            } else {
+                $("#Church-Zone").hide();
+                $("#Church-Zone input").val("").prop("checked", false);
+                $("#DateChurch").attr('required', false);
+                $('.ChurchRadio').removeAttr('required');
+            }
+        });
+    </script>
+   
+
+           
+
+
+    </script>
+
+</body>
+
+</html>
