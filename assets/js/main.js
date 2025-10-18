@@ -69,4 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function login(link, x) {
+        const password = prompt("Enter password:");
+        if (password === x) {
+            localStorage.setItem("username", x);
+            window.location.href = link.dataset.src;
+        } else {
+            alert("Invalid password");
+        }
+    }
+
 });
