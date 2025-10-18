@@ -52,8 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function checkUser(x) {
-    if (localStorage.getItem("username") !== x) {
-      alert("Access is denied.");
-      window.location.href = "/"; // or whatever your login page is
+    const username = sessionStorage.getItem("username");
+    if (!username || username !== x) {
+        alert("Access is denied.");
+        window.location.href = "/"; // or whatever your login page is
     }
 }
