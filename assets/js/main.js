@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function login(link, x) {
+    localStorage.clear();
     const password = prompt("Enter password:");
     if (password === x) {
         localStorage.setItem("username", x);
