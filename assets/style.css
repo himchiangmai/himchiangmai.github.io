@@ -844,6 +844,7 @@ footer {
 
 .card-link {
     text-decoration: none;
+    cursor: pointer;
 }
 
 
